@@ -64,7 +64,7 @@ hist(df$Backers,
      xlim = c(0,220000))
 
 # Let's see if with time more projects were created
-x = barplot(table(df$year), main = "In which year the most kickstarter projects were created?" 
+x = barplot(table(df$year), main = "In which year the most kickstarter projects were created?",
             col = brewer.pal(9, "BuPu"),
             ylim = c(0,80000),
             xlab = "Year",
@@ -90,7 +90,7 @@ text(y = table(df$month),
      pos = 3)
 
 x = barplot(table(df$State), 
-            main = "How many projects are successful?"
+            main = "How many projects are successful?",
             col = brewer.pal(9, "PuRd"),
             ylim = c(0,220000),
             xlab = "Status",
